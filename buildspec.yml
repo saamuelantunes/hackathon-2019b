@@ -5,18 +5,17 @@ phases:
     commands:
       # Install dependencies needed for running tests
       - npm install
+      - npm install -g @angular/cli
   pre_build:
     commands:
       # Discover and run unit tests in the 'tests' directory
       - echo "Pre-Build Stage"
-      - ng build --prod
   build:
     commands:
       - echo "Build Stage"
-      - ng serve --prod
+      - ng build --prod
   post_build:
     commands:
       - echo "Post-Build Stage"
-      -
 artifacts:
   type: zip
