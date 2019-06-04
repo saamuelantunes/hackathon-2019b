@@ -18,7 +18,7 @@ phases:
     commands:
       - echo "Post-Build Stage"
 artifacts:
-  name: hackathon-2019b-prod
+  name: 'hackathon-2019b-prod'
   type: zip
   base-directory: 'dist/'
   discard-paths: yes
