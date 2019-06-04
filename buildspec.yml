@@ -20,10 +20,5 @@ phases:
 artifacts:
   name: 'hackathon-2019b-prod'
   type: zip
-  base-directory: 'dist/'
-  discard-paths: yes
   files:
-    - '**/*.html'
-    - '**/*.js'
-    - '**/*.css'
-    - '**/*.ico'
+    - '**/*'
