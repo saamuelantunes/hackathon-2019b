@@ -20,9 +20,9 @@ phases:
 artifacts:
   type: zip
   base-directory: 'dist/'
-    discard-paths: yes
-    files:
-      - '**/*.html'
-      - '**/*.js'
-      - '**/*.css'
-      - '**/*.ico'
+  discard-paths: yes
+  files:
+    - '**/*.html'
+    - '**/*.js'
+    - '**/*.css'
+    - '**/*.ico'
