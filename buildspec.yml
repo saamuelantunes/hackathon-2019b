@@ -5,7 +5,7 @@ phases:
     commands:
       # Install dependencies needed for running tests
       - npm install
-      - npm install -g @angular/cli
+      - npm install -g @angular/cli@6
   pre_build:
     commands:
       # Discover and run unit tests in the 'tests' directory
