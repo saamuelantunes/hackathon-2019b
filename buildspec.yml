@@ -26,4 +26,4 @@ artifacts:
     - '**/*.js'
     - '**/*.css'
     - '**/*.ico'
-  name: hackathon-2019b-prod
+  name: 'hackathon-2019b-prod'
