@@ -19,3 +19,10 @@ phases:
       - echo "Post-Build Stage"
 artifacts:
   type: zip
+  base-directory: 'dist/'
+    discard-paths: yes
+    files:
+      - '**/*.html'
+      - '**/*.js'
+      - '**/*.css'
+      - '**/*.ico'
