@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
+import { environment } from '../../environments/environment';
 import { User } from '../models/user.model';
 
 
@@ -11,17 +11,16 @@ const httpOptions = {
 @Injectable()
 export class UserService {
 
-  constructor(private http:HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-  private userUrl = 'http://localhost:8080/user-portal/users';
-  //private userUrl = '/api';
+  private userUrl = environment.apiUrl;
 
   public getUsers() {
     return this.http.get<User[]>(this.userUrl);
   }
 
   public deleteUser(user) {
-    return this.http.delete(this.userUrl + "/"+ user.id);
+    return this.http.delete(this.userUrl + '/' + user.id);
   }
 
   public createUser(user) {
